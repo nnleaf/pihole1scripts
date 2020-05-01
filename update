@@ -60,4 +60,11 @@ then
   echo "Testing disk access speed..."
   echo "------------------------------------------------------------------------"
   sudo hdparm -tT /dev/sda1
+  echo "------------------------------------------------------------------------"
+  read -p "Run rkhunter scan? (y/n)"
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+  sudo rkhunter --check --rwo
+  fi
 fi
