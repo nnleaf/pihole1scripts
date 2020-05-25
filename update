@@ -67,7 +67,7 @@ then
   echo "---------------------------------------"
   echo "--[ Checking Unattended Updates log ]--"
   echo "---------------------------------------"
-  sudo tail -n 5 /var/log/dpkg.log
+  sudo tail -n 5 /var/log/unattended-upgrades/unattended-upgrades.log
   echo "---------------------------------------"
   echo "--[ Checking if fail2ban is running ]--"
   echo "---------------------------------------"
