@@ -11,6 +11,11 @@
 # 20200317 - Added pihole updates
 #            (1)https://www.debian.org/doc/manuals/debian-reference/ch09.en.html
 # 20200331 - Combined update and log scripts together
+# 20200525 - 
+#
+echo "----------------------------------------------------------------"
+echo "--[ Debian Version $(cat /etc/debian_version), Update? (y/n) ]--"
+echo "----------------------------------------------------------------"
 
 echo "------------------------------------------------------------------------"
 echo "Updating Debian..."
