@@ -93,9 +93,9 @@ then
   read -p ""
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-  echo "---------------------------"
-  echo "--[ Checking UFW status ]--"
-  echo "---------------------------"
+  echo "-----------------------------"
+  echo "--[ Running rkhunter scan ]--"
+  echo "-----------------------------"
   sudo rkhunter --check --rwo
   fi
 fi
