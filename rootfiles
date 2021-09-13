@@ -1,0 +1,12 @@
+#!/bin/bash
+#     ////     //  ////     //
+#    // //    //  // //    //
+#   //  //   //  //  //   //
+#  //   //  //  //   //  //
+# //    // //  //    // //
+#//     ////  //     ////
+#
+# 20210913 - Created to grab root files automatically with a cronjob
+#
+wget -O root.hints https://www.internic.net/domain/named.root
+mv root.hints /var/lib/unbound/
